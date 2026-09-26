@@ -1,0 +1,97 @@
+{
+  "status": "estimated_feasible",
+  "preferences": {
+    "origin": "Delhi",
+    "days": 3,
+    "people": 2,
+    "budget": 20000,
+    "interests": [
+      "nature",
+      "food"
+    ],
+    "pace": "relaxed",
+    "destination": null
+  },
+  "plan": {
+    "destination": "Rishikesh",
+    "estimated_total_inr": 15180,
+    "budget_breakdown": {
+      "round_trip_transport": 3600,
+      "accommodation": 3600,
+      "food": 3900,
+      "local_transport": 2100,
+      "activities": 0,
+      "contingency": 1980
+    },
+    "within_budget": true,
+    "remaining_inr": 4820,
+    "interest_matches": [
+      "food",
+      "nature"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "date": null,
+        "activities": [
+          "Travel to destination, check in and rest"
+        ],
+        "rain_mm": null,
+        "rain_adjusted": false
+      },
+      {
+        "day": 2,
+        "date": null,
+        "activities": [
+          "Ganges riverside walk",
+          "Meals and unscheduled rest time"
+        ],
+        "rain_mm": null,
+        "rain_adjusted": false
+      },
+      {
+        "day": 3,
+        "date": null,
+        "activities": [
+          "Check out and return to Delhi"
+        ],
+        "rain_mm": null,
+        "rain_adjusted": false
+      }
+    ],
+    "sources": [
+      "https://uttarakhandtourism.gov.in/destination/rishikesh"
+    ]
+  },
+  "alternatives": [
+    {
+      "destination": "Jaipur",
+      "estimated_total_inr": 16790,
+      "within_budget": true
+    }
+  ],
+  "weather": {
+    "status": "not_requested",
+    "rain_by_date": {}
+  },
+  "assumptions": [
+    "INR estimates for the whole group; all prices are illustrative, not live fares or quotes.",
+    "Delhi round-trip surface transport; outbound and return travel each reserve a day.",
+    "Two adults per room, days minus one nights; food and local transport charged on every day.",
+    "Activity costs are per person, additional to meals; 15% contingency included.",
+    "Official tourism links support destination context, not costs, availability or opening hours.",
+    "Confirm transport, opening hours, weather and accessibility before booking; no bookings made."
+  ],
+  "explanation": "Selected a budget-feasible destination, then matched interests and lower estimated cost.",
+  "tool_trace": [
+    "validate_preferences",
+    "search_local_catalog",
+    "calculate_group_budget",
+    "rank_candidates",
+    "build_itinerary"
+  ],
+  "changed_fields": [
+    "days",
+    "budget"
+  ]
+}
